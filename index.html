@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Metabank.loader.js";
+      var loaderUrl = buildUrl + "/Metabank02.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Metabank.data.unityweb",
-        frameworkUrl: buildUrl + "/Metabank.framework.js.unityweb",
-        codeUrl: buildUrl + "/Metabank.wasm.unityweb",
+        dataUrl: buildUrl + "/Metabank02.data",
+        frameworkUrl: buildUrl + "/Metabank02.framework.js",
+        codeUrl: buildUrl + "/Metabank02.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Efisoft",
         productName: "Metabank",
@@ -86,6 +86,7 @@
         // canvas.style.width = "1920px";
         // canvas.style.height = "1080px";
       }
+      canvas.style.background = "url('" + buildUrl + "/Metabank02.jpg') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
